@@ -88,14 +88,14 @@ def main():
 					print "Looping"
 					ok = True
 					for i in b:
-						if exists(Pattern(i).similar(0.9)):
+						if exists(Pattern(i).similar(0.92)):
 							print "found way",i
 							if i == "continue.png":
 								try:
                                 					click("check.png")
 								except:
 									print("NOT found check")
-							click(Pattern(i).similar(0.9))
+							click(Pattern(i).similar(0.92))
 							# ok = False
 							if i == "play2.png":
 								print "BREAKKKKK"

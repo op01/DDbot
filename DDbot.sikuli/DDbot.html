@@ -162,6 +162,11 @@ myPath = os.path.dirname(getBundlePath())
                                         <span class="kw">for</span> i <span class="kw">in</span> b:
                                                 <span class="kw">if</span> exists(Pattern(i).similar(<span class="dig">0.92</span>)):
                                                         <span class="kw">print</span> <span class="str">"found way"</span>,i
+                                                        <span class="kw">if</span> i == <img src="continue.png" />:
+                                                                <span class="kw">try</span>:
+                                                                        <span class="skw">click</span>(<img src="check.png" />)
+                                                                <span class="kw">except</span>:
+                                                                        <span class="kw">print</span>(<span class="str">"NOT found check"</span>)
                                                         <span class="skw">click</span>(Pattern(i).similar(<span class="dig">0.92</span>))
                                                         <span class="cmt"># ok = False
 </span>                                                        <span class="kw">if</span> i == <img src="play2.png" />:
